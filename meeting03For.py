@@ -14,31 +14,43 @@ for i in range(3, 30, 4):
 for i in range(30, 3, -4):
     print(i)
 
+# My example
 for number in [1, 2, 3]:
     print(number)
 
+# My example
 my_name = 'Omer'
 for letter in my_name:
     print(letter)
 
+# My example
 for i in range(50, 100, 5):
     print(i)
 
 
-# it is possible to go down in range
+# It is possible to go down in range
 for i in range(30, 3, -3):
     print(i)
 
-#page 31
+########################################################################
+
+# Page 31
+
+#######################################################################
+
 #Exercise 1
+
+print("This program get 10 values, sum them up, and show you the sum.")
 sum = 0
 for i in range(10):
     num = int(input(f"Enter your {i+1} number"))
     sum += num
 print(f"The sum of the number you have entered is:{sum}")
 
+#######################################################################
+
 #  Exercise 2
-print("This programm can get an unknown amount of numbers,")
+print("This program can get an unknown amount of numbers,")
 print("the first input needs to be a positive integer,")
 print("and it will be the amount of the inputs after it.")
 print("Later, the program will calculate the average of the numbers typed after the first input")
@@ -50,6 +62,7 @@ for i in range(count):
 average = sum / count
 print(average)
 
+#######################################################################
 
 # Exercise 3
 print("This program can get 10 numbers and show you the biggest of them")
@@ -61,31 +74,43 @@ for i in range(9):
         max = num
 print(f"The maximum number you have entered is {max}")
 
+#######################################################################
+
 # Exercise 4
 for i in range(100):
     print(i+1)
 
+#######################################################################
 
 #page 31
 
+#######################################################################
+
 # Exercise 2
+
 print("This program gets 2 integers, and shows all the integers between them (included)")
 first_int = int(input("Enter the first integer"))
 second_int = int(input("Enter the first integer"))
 for i in range(first_int, (second_int+1)):
     print(i)
 
+#######################################################################
+
 # Exercise 3
-print("This program gets a natural number, let it be x, and show you the result of x! (x factorial)")
-num = int(input("Enter the x that you would like me to calculate x! for it"))
+
+print("This program gets a natural number, let it be X, and show you the result of X! (X factorial)")
+num = int(input("Enter the X that you would like me to calculate x! for it"))
 factorial = 1
 for i in range(1, (num+1)):
     factorial *= i
-print(f"the rusult of x! is: {factorial}")
+print(f"the rusult of X! is: {factorial}")
+
+#######################################################################
 
 # Exercise 4
-print("This program gets natural nubmer,")
-print("let him be x, and calculates the sum of the number between 1 and x,")
+
+print("This program gets natural number,")
+print("let him be X, and calculates the sum of the number between 1 and X,")
 print("that can be divided by 3 without a remainder ")
 num = int(input("Enter a natural number"))
 sum = 0
@@ -94,19 +119,28 @@ for i in range(1, (num+1)):
         sum = sum + i
 print(f"The sum is: {sum}.")
 
+#######################################################################
+
 # page 32
 
+#######################################################################
+
 # Exercise 5
-print("This program gets 15 numbers, sums up every third number, and show you the sum")
+
+print("This program gets 30 numbers, sums up every third number, and show you the sum")
 sum = 0
-for i in range(1, 100):
+for i in range(1, 31):
     num = float(input(f"Enter the {i} number"))
     if (i % 3) == 0 :
         sum += num
 print(f"The sum is {sum}.")
 
+#######################################################################
+
 # Exercise 6
-print("This program gets a natural number, let it be N, and shows you sum of the geometric sequence, with the first object 1, and the commun ratio 2, from 1 to x+1 ")
+
+print("This program gets a natural number, let it be N, and shows you sum of the geometric sequence, ")
+print("with the first object 1, and the common ratio 2, from 1 to N+1 ")
 sum = 0
 num = int(input("Enter a natural number"))
 for i in range((num+1)):
@@ -114,7 +148,10 @@ for i in range((num+1)):
     sum += 2**i
 print(f"The sum is {sum}.")
 
+#######################################################################
+
 # Exercise 7
+
 print("This program gets a natural number, let it be N, and shows you 2 sequences.")
 print("The first sequence will be all the natural numbers from 1 to N ")
 print("The objects of the second sequence will be the objects of the first sequence, each of them multiplied by 2 ")
@@ -126,8 +163,11 @@ print("The second sequence is:")
 for i in range(1, (num+1)):
     print(i*2)
 
+#######################################################################
+
 # Exercise 8
-print("This program gets natural nubmer,")
+
+print("This program gets natural number,")
 print("let him be N, and calculates the sum of the number between 1 and N,")
 print("that can be divided by 4 or 7 without a remainder ")
 num = int(input("Enter a natural number"))
@@ -137,7 +177,10 @@ for i in range(1, (num+1)):
         sum = sum + i
 print(f"The sum is: {sum}.")
 
+#######################################################################
+
 #Exercise 9
+
 print("This program calculates the value of y, for different values of x, by the equation (Y = X^2 +5)")
 print("You choose the first value of X, the last value of X, and the steps between the values")
 start_value = int(input("Enter the first value of X"))
@@ -148,8 +191,12 @@ for i in range(start_value, (last_value+1), step):
     y_value = (i**2 + 5)
     print(y_value)
 
+#######################################################################
+
 # Exercise 11
-print("This program gets two different integers, and show you all the integers between them, from the smallest to the biggest and back to the smallest")
+
+print("This program gets two different integers, and show you all the integers between them, ")
+print("from the smallest to the biggest and back to the smallest")
 num1 = int(input("Enter the first natural number"))
 num2 = int(input("Enter the second natural number"))
 max_num = max(num1, num2)
@@ -159,26 +206,36 @@ for i in range(min_num, (max_num)):
 for i in range(max_num, (min_num-1), -1):
     print(i)
 
+#######################################################################
+
 # Exercise 12
-print("This program gets 100 integers, calculates the sum of the evens, and shows it to you.")
+
+print("This program gets 20 integers, calculates the sum of the evens, and shows it to you.")
 sum = 0
-for i in range(10):
+for i in range(20):
     num = int(input(f"Enter the {i+1} number"))
     if num % 2 == 0:
         sum += num
 print(f"The sum of the even integers is {sum}")
 
+#######################################################################
+
 # Exercise 13
-print("This program gets 100 numbers, sums up the numbers with the even index, and shows you the sum")
+
+print("This program gets 20 numbers, sums up the numbers with the even index, and shows you the sum")
 sum = 0
-for i in range(10):
+for i in range(20):
     num = int(input(f"Enter the {i+1} number"))
     if (i+1) % 2 == 0:
         sum += num
 print(f"The sum of the even integers is {sum}")
 
+#######################################################################
+
 # Exercise 14
-print("This program gets a main value, then gets another 100 numbers, and then shows you the indexes of the numbers that equal to the main value")
+
+print("This program gets a main value, then gets another 100 numbers, ")
+print("and then shows you the indexes of the numbers that equal to the main value")
 main_value = float(input("Choose the main value"))
 index_list = []
 for i in range(10):
@@ -187,8 +244,12 @@ for i in range(10):
         index_list += [(i+1)]
 print(index_list)
 
+#######################################################################
+
 # Exercise 15
-print("This program gets 10 couples of cards, each couple of cards contains a name of a student and his grade in the exam")
+
+print("This program gets 10 couples of cards, ")
+print("each couple of cards contains a name of a student and his grade in the exam")
 print("The program shows the names of the students that passed the exam, and the total average of the grades.")
 passed_grade = 70
 students_passed = []
@@ -196,23 +257,26 @@ sum = 0
 count = 0
 for i in range(10):
     student_name = input(f"Enter the {i+1} students name")
-    student_grade = float(input((f"Enter {student_name}'s grade")))
+    student_grade = float(input(f"Enter {student_name}'s grade"))
     if student_grade >= passed_grade:
         students_passed += [student_name]
         sum += student_grade
         count += 1
 
-
 average = sum/count
 print("The names of the student that passed the exam are:")
 print(students_passed)
-print(f"The average grade is {average}")
+print(f"The average grade of the students who passed the test is {average}")
+
+#######################################################################
 
 # Exercise 16
 print("This program has 2 stages:")
 print("Stage 1: the program gets 5 numbers and calculate their sum")
 print("Stage 2: the program gets 10 numbers and shows you the index of the numbers that equal to the sum from stage 1")
+
 sum = 0
+
 for i in range(5):
     num = float(input(f"Enter the {i+1} number"))
     sum += num
@@ -225,11 +289,14 @@ for i in range(10):
         index_list += [(i+1)]
 print(f"The indexes of the numbers got in stage 2 that equal to the sum from stage 1 are:{index_list} ")
 
-# Exercise 17
-print
+#######################################################################
 
 # Exercise 18
-print("This program")
+
+print("In stage 1, this program gets an amount of numbers.")
+print("Then, the program gets numbers from the user, in the amount chose in stage 1 ")
+print("In the end, the program shows the second biggest number that the user entered,")
+print("annd shows the index of the last time that number was entered by the user.")
 amount = int(input("Enter the amount of numbers"))
 if amount == 1:
     print("invalid input, you need to enter a minimum amount of 2")
@@ -263,27 +330,26 @@ else:
     print(f"the second biggest number is: {max_list[1]}")
     print(f"the index of the last time that number was entered is: {last_second_big_index} ")
 
+#######################################################################
+
 # page 35
 
-# Exercise 1
-
-# Exercise 2
-
-# Exercise 3
+#######################################################################
 
 # Exercise 4
+
 print("Welcome to the voting program of the UN")
-print("voting codes are:")
+print("Voting codes are:")
 print("1 - for")
 print("2 - against ")
 print("3 - abstain")
 print("4 - veto")
-print("Note 1: if you will vote a wrong number, your vote will not be counted, and it will be wasted")
-print("Note 2: you can vote 4 only if you have a veto right")
+print("Note 1: If you will vote a wrong number, your vote will not be counted, and it will be wasted")
+print("Note 2: You can vote 4 only if you have a veto right")
 count_for = int(0)
 count_against = int(0)
 count_abstained = int(0)
-veto_list = ['china' , 'france', 'russia', 'uk', 'usa']
+veto_list = ['china', 'france', 'russia', 'uk', 'usa']
 for_list = []
 against_list = []
 abstained_list = []
@@ -308,17 +374,20 @@ print(f"The number of country's that voted for is: {count_for}")
 print(f"The number of country's that voted against is: {count_against} " )
 print(f"The number of country's that voted abstained is: {count_abstained}")
 
-print("Countrys voted for:")
+print("Country's voted for:")
 print(for_list)
 print()
-print("Countrys voted for:")
+print("Country's voted for:")
 print(against_list)
 print()
-print("Countrys voted for:")
+print("Country's voted for:")
 print(against_list)
 print()
 
-# nestef loops
+#######################################################################
+
+# nested loops
+
 inner_loop_count = 0
 for i in range(5):
     n = int(input("Enter number: "))
@@ -329,21 +398,30 @@ for i in range(5):
     print ("Most significant digit: ", n)
 print("Inner loop ran ", inner_loop_count)
 
+#######################################################################
+
 # Example
+
 for i in range(10):
     for j in range(10):
         print (i, " ", j)
 
+#######################################################################
+
 # Page 29
 
+#######################################################################
+
 #Exercise 3
-num = int(input("Enter psitive integers, i will calculate for you the sum of the digits of each number, until you will enter a negative integer"))
+
+num = int(input("Enter positive integers, i will calculate for you the sum of the digits of each number, "
+                "until you will enter a negative integer"))
 sum = 0
-while num>= 0:
+while num >= 0:
     original_num = num
-    while num>0:
-        sum += num%10
-        num = num//10
+    while num > 0:
+        sum += num % 10
+        num = num // 10
     print(f"The sum of the digits of the {original_num} is: {sum}")
     answer = input("Do you want another summary action to this sum?")
     if answer == 'yes':
@@ -357,11 +435,15 @@ while num>= 0:
     sum = int(0)
     num = int(input("Enter another number"))
 
+#######################################################################
+
 # page 38
+
+#######################################################################
 
 # Exercise 8
 
-print("Enter the length and width of a rectangle and the program will draw it for you ")
+print("Enter the length and width of a rectangle and the program will draw it for you")
 rows = int(input("What is the length?"))
 columns = int(input("What is the width?"))
 for i in range(rows):
@@ -369,24 +451,32 @@ for i in range(rows):
     for j in range(columns):
         print('*', end= "")
 
+#######################################################################
 
 # Exercise 9
+
 print("This is the multiply board from 1 to 20")
 for i in range(20):
     print()
     for j in range(20):
         print(((i+1)*(j+1)), end = "" + " ")
 
+#######################################################################
+
 # Exercise 10
-print("This program shows you the multiply board, to the number of rows and columns you choose")
-columns  = int(input("Choose number of columns"))
+
+print("This program shows you the multiply board, you choose the number of rows and columns")
+columns = int(input("Choose number of columns"))
 rows = int(input("Choose number of rows"))
 for i in range(rows):
     print()
     for j in range(columns):
-        print(((i+1)*(j+1)), end = "" + " ")
+        print(((i+1)*(j+1)), end="" + " ")
 
-#Exercise 15
+#######################################################################
+
+# Exercise 15
+
 print("This program")
 most_rainy_month = int(0)
 most_rainy_year = int(0)
@@ -406,6 +496,6 @@ for i in range(1991, 2001):
 print(index_most_rainy_month)
 print(f"The most rainy year was {index_most_rainy_year}")
 
-
+#######################################################################
 
 
